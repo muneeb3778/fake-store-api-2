@@ -5,6 +5,9 @@ import Categories from './srcfakeproduct/Categories'
 import { Navbar } from './srcfakeproduct/Navbar'
 import Cart from './srcfakeproduct/Cart'
 import Error from './srcfakeproduct/Error'
+import Form from './Form-Validation/Form'
+
+
 
 function App() {
 
@@ -13,7 +16,7 @@ function App() {
   <>
   <BrowserRouter>
 <Routes>
-<Route path='/' element={<Home/>}/>
+<Route path='/' element={<Form/>}/>
 <Route path='/home' element={<Home/>}/>,
 <Route path='/home/categories/:ky' element={<Categories/>}/>,
 <Route path='/home/:key' element={<Singlepage/>}/>,
@@ -24,7 +27,9 @@ function App() {
 
 </BrowserRouter>
 
-</>  
+
+
+  </>  
 
 
     
